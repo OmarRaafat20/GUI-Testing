@@ -10,4 +10,6 @@ public interface Constants {
     String BankHomePage = "https://parabank.parasoft.com/parabank/index.htm";
 
     String DropdownExm = "https://www.sugarcrm.com/uk/request-demo/";
+
+    String  NewLink = "https://automationexercise.com/";
 }

@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="main.java.Utils.SuitListeners"/>
     </listeners>
-    <test name="LoginPageTest1">
+    <test name="omar">
         <parameter name="browserName" value="chrome"/>
         <classes>
             <class name="test.java.DropDownTest"/>

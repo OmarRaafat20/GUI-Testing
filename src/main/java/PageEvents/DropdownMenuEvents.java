@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 
-import static test.java.BaseTest.driver;
+import static main.java.base.BaseTest.driver;
 
 public class DropdownMenuEvents {
 

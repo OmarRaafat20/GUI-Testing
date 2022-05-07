@@ -3,7 +3,7 @@ package main.java.PageEvents;
 import main.java.PageObjects.RegistrationElements;
 import main.java.Utils.ElementFetch;
 import org.testng.Assert;
-import test.java.BaseTest;
+import main.java.base.BaseTest;
 
 import java.time.Duration;
 

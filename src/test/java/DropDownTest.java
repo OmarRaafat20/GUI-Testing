@@ -1,6 +1,7 @@
 package test.java;
 
 import main.java.PageEvents.DropdownMenuEvents;
+import main.java.base.BaseTest;
 import org.testng.annotations.Test;
 
 public class DropDownTest  extends BaseTest {

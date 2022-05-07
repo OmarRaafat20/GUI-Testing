@@ -2,7 +2,7 @@ package main.java.PageEvents;
 
 import main.java.PageObjects.BankHomePageElements;
 import main.java.Utils.ElementFetch;
-import test.java.BaseTest;
+import main.java.base.BaseTest;
 
 public class BankHomePageEvents {
 

@@ -1,6 +1,7 @@
 package test.java;
 
 import main.java.PageEvents.RegistrationValidationEvents;
+import main.java.base.BaseTest;
 import org.testng.annotations.Test;
 
 public class RegistrationValidationTest extends BaseTest {
