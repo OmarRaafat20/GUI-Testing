@@ -4,16 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32060c20-8dd0-4f5c-acf0-69a3f3879b0d" name="Changes" comment="" />
+    <list default="true" id="32060c20-8dd0-4f5c-acf0-69a3f3879b0d" name="Changes" comment="create readme">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageEvents/ShgardiLoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPageElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ShgardiLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageEvents/BankHomePageEvents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageEvents/DropdownMenuEvents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageEvents/RegistrationEvents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageEvents/RegistrationValidationEvents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BankHomePageElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Dropdownelements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/RegistrationElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/RegistrationValidationElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BankHomePageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DropDownTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationValidationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="learning" />
+        <entry key="$PROJECT_DIR$" value="a00ac5d78f767e64a2cec37104276ced2115e75d" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,6 +58,9 @@
     </option>
   </component>
   <component name="ProjectId" id="28pbpvZvDSaFxMmiCuzWXTWZTUI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,6 +69,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "exceleditor.install": "false",
     "last_opened_file_path": "E:/GUI-Testing"
   }
@@ -50,6 +83,14 @@
       <option name="presentableId" value="Default" />
       <updated>1651916661951</updated>
     </task>
+    <task id="LOCAL-00001" summary="create readme">
+      <created>1651917181817</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651917181817</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -62,5 +103,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="omar" />
+    <MESSAGE value="create readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="create readme" />
   </component>
 </project>

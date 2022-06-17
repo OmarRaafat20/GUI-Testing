@@ -9,6 +9,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import main.java.Utils.Constants;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
@@ -43,7 +44,7 @@ public class BaseTest {
         logger = extent.createTest(testMethod.getName());
         setupDriver(browserName);
         driver.manage().window().maximize();
-        driver.get(Constants.DropdownExm);
+        driver.get(Constants.ShgardiLoginPage);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
 
     }
@@ -89,4 +90,20 @@ public class BaseTest {
             driver = new ChromeDriver();
         }
     }
+    public void WaitMethod () throws InterruptedException {
+        Thread.sleep(3000);
+    }
+    public void ScrollDown () {
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("window.scrollBy(0,800)");
+    }
+    public void MoveToTheNewTab() {
+        driver.getWindowHandles().forEach(tab->driver.switchTo().window(tab));
+    }
+    public void MoveToAlert() {
+        //driver.switchTo().activeElement().findElement(By.id("mat-dialog-0")).click();
+        driver.switchTo().alert().accept();
+    }
+
+
 }
