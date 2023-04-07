@@ -9,6 +9,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import main.java.Utils.Constants;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
@@ -16,6 +17,8 @@ import org.testng.annotations.*;
 import java.io.File;
 import java.lang.reflect.Method;
 import java.time.Duration;
+
+
 
 
 public class BaseTest {
@@ -36,6 +39,13 @@ public class BaseTest {
         extent.setSystemInfo("Automation Tester ", "Omar Tango");
     }
 
+    public void ScrollDown() throws InterruptedException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)", "");
+    }
+
+
+
     public void setupDriver(String browserName) {
         if (browserName.equalsIgnoreCase("chrome")) {
             System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "Drivers" + File.separator + "chromedriver.exe");
@@ -48,13 +58,12 @@ public class BaseTest {
 
     @BeforeMethod
     @Parameters(value = {"browserName"})
-
     public void beforeMethoMethodd(String browserName, Method testMethod) {
         logger = extent.createTest(testMethod.getName());
         setupDriver(browserName);
         driver.manage().window().maximize();
-        driver.get(Constants.NewLink);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
+        driver.get(Constants.Url);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 
     }
 
@@ -79,8 +88,8 @@ public class BaseTest {
             Markup m = MarkupHelper.createLabel(logText, ExtentColor.YELLOW);
             logger.log(Status.SKIP, m);
         }
+        driver.quit();
     }
-
 
     @AfterTest
     public void afterTestMethod() {

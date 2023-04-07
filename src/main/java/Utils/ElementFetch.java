@@ -6,7 +6,7 @@ import main.java.base.BaseTest;
 
 import java.util.List;
 
-public class ElementFetch {
+public class ElementFetch extends BaseTest{
     public WebElement getWebElement (String identifierType , String identifierValue ){
 
         switch (identifierType){

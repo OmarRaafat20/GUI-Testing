@@ -7,7 +7,8 @@
     <test name="omar">
         <parameter name="browserName" value="chrome"/>
         <classes>
-            <class name="test.java.DropDownTest"/>
+            <class name="test.java.SignUpTest"/>
+
         </classes>
     </test>
 </suite>
