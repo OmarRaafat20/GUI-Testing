@@ -8,7 +8,7 @@ import org.testng.IAnnotationTransformer;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import main.java.base.BaseTest;
+import main.java.Base.BaseTest;
 import org.testng.annotations.ITestAnnotation;
 
 import java.io.File;
@@ -61,8 +61,10 @@ public class SuitListeners implements ITestListener, IAnnotationTransformer {
     public void onFinish(ITestContext context) {
     }
 
-    @Override
+   /* @Override
     public void transform(ITestAnnotation iTestAnnotation , Class aClass , Constructor constructor , Method method) {
         iTestAnnotation.setRetryAnalyzer(RetryAnalyser.class);
     }
+
+    */
 }

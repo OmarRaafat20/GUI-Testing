@@ -4,11 +4,10 @@
     <listeners>
         <listener class-name="main.java.Utils.SuitListeners"/>
     </listeners>
-    <test name="omar">
+    <test name="Foodeics-TASK-Login">
         <parameter name="browserName" value="chrome"/>
         <classes>
             <class name="test.java.SignUpTest"/>
-
         </classes>
     </test>
 </suite>

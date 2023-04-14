@@ -2,7 +2,7 @@ package main.java.Utils;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import main.java.base.BaseTest;
+import main.java.Base.BaseTest;
 
 import java.util.List;
 
@@ -53,5 +53,4 @@ public class ElementFetch extends BaseTest{
                     return null;
             }
         }
-
 }
