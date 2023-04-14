@@ -20,8 +20,10 @@ not just for particular pages.
 If there is something common which occurs in different pages,
 then create a Page Object for that also so that different Test Classes can make use of it. To avoid all the redundancy
 
--------------------------------------------------
-
+--------------------------------------------------------------------------------------------------
+Note: for This Point : add address and choose cash as a payment method i cant do it becus the total amount of the order cant be paid in Cash Method , and the address was already added becus i used my Account 
+Account UserName: 01015080473 / Pass: Tango@2020
+--------------------------------------------------------------------------------------------------
 
 each Page Has its Own Classes and interfaces in the Page events I defined the Methods that I will Call in the Test Class its under the test.java Folder ,
 
