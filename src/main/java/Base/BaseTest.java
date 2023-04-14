@@ -12,22 +12,16 @@ import main.java.PageObjects.SelectProductsElements;
 import main.java.Utils.Constants;
 import main.java.Utils.ElementFetch;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.io.File;
 import java.lang.reflect.Method;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
-
-import static main.java.PageEvents.ShoppingCartEvents.ClickOnAddToCartButton;
 
 
 public class BaseTest {
@@ -47,7 +41,7 @@ public class BaseTest {
 
     public static void ScrollDown1() throws InterruptedException {
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,500)", "");
+        js.executeScript("window.scrollBy(0,900)", "");
     }
 
     public static void ScrollUp() throws InterruptedException {
@@ -59,12 +53,6 @@ public class BaseTest {
     public static void ScrollToElement(WebElement element) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
     }
-
-
-
-
-
-
 
 
     public static void CloseTheObjectTap() {

@@ -1,13 +1,8 @@
 package main.java.PageEvents;
 
 import main.java.Base.BaseTest;
-import main.java.PageObjects.SelectProductsElements;
 import main.java.PageObjects.VideoGamesPageElements;
 import main.java.Utils.ElementFetch;
-
-import java.util.ArrayList;
-
-import static main.java.Base.BaseTest.driver;
 
 public class VideoGamesPageEvents {
 

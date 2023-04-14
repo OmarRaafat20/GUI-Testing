@@ -12,16 +12,7 @@ import static main.java.Base.BaseTest.driver;
 
 public class ShoppingCartEvents {
 
-    public static void ClickOnAddToCartButton() {
-        ElementFetch elementFetch = new ElementFetch();
-        elementFetch.getWebElement("XPATH", ShoppingCartElements.AddToCart).click();
 
-        try {
-            elementFetch.getWebElement("XPATH", SelectProductsElements.NoWarrantyButton).click();
-        } catch (Exception e) {
-            System.out.println("No Warranty Button");
-        }
-    }
 
     public static void ClickOnProceedToBuy() {
         ElementFetch elementFetch = new ElementFetch();

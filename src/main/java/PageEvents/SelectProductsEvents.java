@@ -3,21 +3,27 @@ package main.java.PageEvents;
 import main.java.Base.BaseTest;
 import main.java.Models.ShoppingCart;
 import main.java.PageObjects.SelectProductsElements;
+import main.java.PageObjects.ShoppingCartElements;
 import main.java.Utils.ElementFetch;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
-
 import java.util.ArrayList;
 import java.util.List;
 
-import static main.java.PageEvents.ShoppingCartEvents.ClickOnAddToCartButton;
 
 public class SelectProductsEvents extends BaseTest {
 
+    public static void ClickOnAddToCartButton() {
+        ElementFetch elementFetch = new ElementFetch();
+        elementFetch.getWebElement("XPATH", ShoppingCartElements.AddToCart).click();
 
-
+        try {
+            elementFetch.getWebElement("XPATH", SelectProductsElements.NoWarrantyButton).click();
+        } catch (Exception e) {
+            System.out.println("No Warranty Button");
+        }
+    }
     public ShoppingCart MyProducts() throws InterruptedException {
         Thread.sleep(7000);
         ElementFetch elementFetch = new ElementFetch();
@@ -30,6 +36,7 @@ public class SelectProductsEvents extends BaseTest {
 
     public static ShoppingCart OpenObjectNewTap(List<WebElement> elements) throws InterruptedException {
         Actions actions = new Actions(driver);
+
          Integer price;
          Integer counter = 0;
          Integer amount = 0;
@@ -49,13 +56,13 @@ public class SelectProductsEvents extends BaseTest {
                 driver.switchTo().window(tabs.get(tabs.size() - 1));
                 ClickOnAddToCartButton();
                 ImplicitlyWait();
-                CloseTheObjectTap();
+                //CloseTheObjectTap();
                 driver.switchTo().window(tabs.get(0));
             }
             System.out.println("Inside For");
         }
         ElementFetch elementFetch = new ElementFetch();
-        Thread.sleep(5000);
+        Thread.sleep(6000);
         System.out.println("amount = " + amount);
         System.out.println("counter = " + counter);
         return ShoppingCart.builder().amount(amount).subTotal(counter).build();

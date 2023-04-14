@@ -15,7 +15,7 @@ public class SignUpTest extends BaseTest {
     public void SignUp() throws InterruptedException {
 
         HomePageEvents homePageEvents = new HomePageEvents();
-        homePageEvents.ClickOnAmazon();
+      //  homePageEvents.ClickOnAmazon();
         homePageEvents.ClickOnSignInButton();
 
         LoginPageEvents loginPageEvents = new LoginPageEvents();
@@ -51,12 +51,14 @@ public class SignUpTest extends BaseTest {
 
         ShoppingCart subTotal =  selectProductsEvents.MyProducts();
         selectProductsEvents.RefreshThePage();
+        selectProductsEvents.RefreshThePage();
 
         ImplicitlyWait();
         ScrollUp();
         ImplicitlyWait();
         ClickOnCart();
         ImplicitlyWait();
+        Thread.sleep(3000);
         CheckTheSubTotalOfTheAddedProducts(subTotal.getSubTotal());
         Thread.sleep(3000);
         CheckTheAmountOfTheAddedProducts(subTotal.getAmount());

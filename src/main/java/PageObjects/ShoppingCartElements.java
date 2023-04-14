@@ -2,8 +2,6 @@ package main.java.PageObjects;
 
 public interface ShoppingCartElements {
 
-
-    String ClickOnCart = "//*[@id=\"nav-cart\"]";
     String Cart = "//*[@id=\"nav-cart\"]";
 
     String ClickOnProceedToBuy = "//*[@id=\"sc-buy-box-ptc-button\"]/span/input";
